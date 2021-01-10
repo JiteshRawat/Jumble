@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset= UTF-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Application</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Corben" rel="stylesheet">
+    </head>
+    <style type= text/css></style>
+
+    <body class="text-center">
+        <div>   
+        <h1 class="heading">
+          <b class="j">J</b><b class="u">U</b><b class="m">M</b><b class="bl">B</b><b class="l">L</b><b class="e">E</b>
+        </h1>
+        <div class="level" id= 'levels'></div>
+        <div class= "container-fluid">
+        <div class="row">
+            <div class="col-lg-9 col-sm-6 lives" >Lives <i class="fa fa-heart l1" aria-hidden="true"> </i> <p class="l2" id= "lifeline">5</p></div>
+            <div class="col-lg-2 col-sm-6 score">Score <p class="l1" style="text-align: center;" id= points>0</p></div>
+        </div>
+        </div>
+        </div>
+        <div class="container-fluid" >
+        <div>
+        <button class="game-button" onclick= "getWord();" >Get Word</button>
+        <p id= 'selectword' class= 'selectedword'>_</p>
+        <button class="game-button red" onclick="result();">Enter</button>
+        <div id="myModal" class="modal">
+            <h1 class="game-over">Game Over!!</h1>
+            <button class="btn btn-danger" id= "restart">Restart</button>
+        </div>
+        <div id="tellans" class= "modal" >
+            <p id="correctword" style="font-size: 8vw;"></p>
+        </div>
+        <script style= text-align:center; src= "first.js"></script>
+        </div>
+        </div>
+       
+    </body>
+</html>
