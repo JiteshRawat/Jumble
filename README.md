@@ -1,2 +1,2 @@
 # Jumble
-##This is just for fun javascript game developed while learning.
+This is just for fun javascript game developed while learning.
